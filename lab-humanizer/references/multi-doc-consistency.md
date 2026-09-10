@@ -62,7 +62,7 @@ Khi duyệt và biên tập, các thông số kỹ thuật sau đây phải **kh
 ## 5. Quy trình Kiểm tra Đồng bộ trước khi Release
 
 Trước khi chốt một bài lab:
-1. `git diff` toàn bộ repo để kiểm tra các từ khóa nhạy cảm (`Codelab`, `cục bộ`, `bằng chứng`, `tệp`, `nhấp phải`, `Antigravity`).
+1. `git diff` toàn bộ repo để kiểm tra các từ ngữ dịch thô hoặc không nhất quán (`Codelab`, `cục bộ`, `bằng chứng`, `tệp`, `nhấp phải`).
 2. Chạy lệnh grep kiểm tra sự nhất quán của các đường link release tag:
    ```bash
    grep -rn "v1.0." .
