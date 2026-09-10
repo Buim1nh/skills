@@ -1,54 +1,55 @@
-# Checklist 12 điểm kiểm duyệt & Xuất bản Bài Lab (Anti-AI & Scalability Gate)
+# Checklist 10 điểm kiểm duyệt Bài Lab (Anti-AI & Scalability Gate)
 
-Trước khi xuất bản hoặc hoàn tất chỉnh sửa bất kỳ bài Lab nào (bao gồm cả `README.md`, `GUIDE.md`, `RUBRIC.md`, `REPORT_TEMPLATE.md`), hãy rà soát văn bản qua 12 tiêu chí sau:
-
----
-
-### Nhóm 1: Khử rác AI & Giọng điệu kỹ sư (Tone & Anti-Slop)
-
-1. **Đã thống nhất gọi là "Lab" chưa?**
-   - *Đạt:* Dùng "Lab", "Bài lab", "Lab #X". Tuyệt đối không có bất kỳ chữ "Codelab" hay "Codelabs" nào.
-
-2. **Có dính emoji trang trí không?**
-   - *Đạt:* 0 emoji trong toàn bộ văn bản (trừ các ký hiệu kỹ thuật như nút chạy `▶` hoặc mũi tên luồng `→`).
-
-3. **Có câu chào mừng / dỗ dành non-tech không?**
-   - *Đạt:* Bắt đầu trực diện vào mục tiêu kỹ thuật hoặc thao tác đầu tiên. Không có *"Chào mừng..."*, *"Đừng lo lắng..."*, *"Cầm tay chỉ việc..."*.
-
-4. **Có ví von ngô nghê / nhân hóa AI không?**
-   - *Đạt:* Trình bày bản chất khoa học (xác suất, mô hình tính toán, hàm mục tiêu). Không có *"mắt thần"*, *"AI đoán bừa"*, *"áo may đo"*, *"thùng carton"*.
+Trước khi xuất bản hoặc hoàn tất chỉnh sửa bất kỳ bài Lab nào (bao gồm cả `README.md`, `GUIDE.md`, `RUBRIC.md`, `REPORT_TEMPLATE.md`), hãy rà soát văn bản qua 10 tiêu chí phán đoán (Heuristics) sau:
 
 ---
 
-### Nhóm 2: Thuật ngữ & Quy chuẩn dịch thuật (Terminology)
+### Nhóm 1: Giọng điệu kỹ sư & Khử rác AI (Tone & Anti-Slop)
 
-5. **Có giữ nguyên các thuật ngữ tiếng Anh chuẩn không?**
-   - *Đạt:* `bounding box`, `checkpoint`, `ground truth`, `prediction`, `score`, `threshold`, `file ZIP`, `pipeline`, `token`, `prompt` được giữ nguyên, không bị dịch gượng ép sang "hộp giới hạn", "sự thật", "tệp", v.v.
+1. **Đã thống nhất tên gọi "Lab" chưa?**
+   - *Nguyên tắc:* Luôn dùng "Lab", "Bài lab", "Lab #X". Tuyệt đối loại bỏ từ "Codelab" hoặc "Codelabs".
 
-6. **Đã áp dụng đúng quy tắc Song ngữ lần đầu (First-Mention) chưa?**
-   - *Đạt:* Chỉ mở ngoặc chú thích tiếng Anh ở lần đầu tiên từ đó xuất hiện trong file. Các lần sau dùng duy nhất 1 từ nhất quán, không lặp lại dấu ngoặc đơn.
+2. **Bộ lọc Ký tự thừa (Visual & Decoration Filter):**
+   - *Nguyên tắc:* 0 emoji trang trí trong toàn bộ văn bản (chỉ chấp nhận các ký hiệu kỹ thuật như nút chạy `▶` hoặc mũi tên luồng `→`).
 
-7. **Có dùng từ ngữ thao tác máy tính tự nhiên không?**
-   - *Đạt:* Dùng "chạy ô", "mở", "chọn", "click chuột phải", "click đúp", "file", "local". Không dùng "thực thi", "tiến hành", "nhấp phải", "nhấp đúp", "tệp", "cục bộ".
+3. **Bộ lọc Cảm xúc & Xã giao (Emotional & Social Tone Filter):**
+   - *Nguyên tắc:* Bất kỳ câu nào mang tính chất: (1) Chào đón xã giao, (2) Trấn an tâm lý/trình độ người học (non-tech), (3) Cổ vũ/khen ngợi cảm tính, hoặc (4) Quảng bá khóa học $\rightarrow$ **Cắt bỏ 100%**. 
+   - *Tiêu chuẩn:* Bài lab mở đầu trực diện bằng: Bối cảnh kỹ thuật $\rightarrow$ Thao tác $\rightarrow$ Kết quả cần quan sát.
 
-8. **Các mệnh lệnh cấm có ngắn gọn, dứt khoát không?**
-   - *Đạt:* Nêu rõ điều cấm trực tiếp (ví dụ: *"Không ghi lại họ tên, MSSV trong báo cáo"*). Không lên lớp đạo đức hay giải thích dài dòng về PII trừ khi tài liệu gốc yêu cầu.
+4. **Bộ lọc Bản chất Khoa học (Scientific Grounding Filter):**
+   - *Nguyên tắc:* 
+     - Cấm mượn đồ vật sinh hoạt đời thường (con vật, đồ gia dụng, thần chú, quần áo) để ví von cho thuật toán.
+     - Cấm nhân hóa máy móc (không dùng "AI đoán bừa", "độ tự tin của AI", "thước đo chân lý").
+     - Định nghĩa và giải thích hiện tượng thuần túy bằng bản chất toán học/khoa học máy tính (xác suất, ma trận, vector, mô hình tính toán, nhãn chuẩn theo guideline).
 
 ---
 
-### Nhóm 3: Tính Đồng bộ Đa tài liệu & Tính Kế thừa (Multi-Doc & Scalability)
+### Nhóm 2: Thuật ngữ & Thao tác kỹ thuật (Terminology & Actions)
 
-9. **Tính đồng bộ tuyệt đối giữa các file trong bài lab (Cross-Document Consistency):**
-   - *Đạt:* Các thông số giữa `README.md`, `GUIDE.md`, `RUBRIC.md` và `notebook` khớp nhau 100%:
-     - Release tag giống hệt nhau (ví dụ: cùng là `v1.0.1`).
-     - Tên file nộp bài giống hệt nhau (ví dụ: cùng là `KX-DAYXX-report.zip`).
-     - Cấu trúc cây thư mục nộp bài khớp từng thư mục con.
+5. **Bộ lọc 3 câu hỏi cho Thuật ngữ tiếng Anh (The 3-Question Heuristic):**
+   - *Nguyên tắc phán đoán khi gặp thuật ngữ tiếng Anh:*
+     1. **Có gắn liền với Code/API/Tham số không?** (ví dụ: `bbox_xyxy`, `conf`, `IoU`, `learning_rate`, `prompt`, `token`) $\rightarrow$ **Giữ 100% tiếng Anh**.
+     2. **Cộng đồng kỹ sư thực tế dùng trực tiếp không?** (ví dụ: `checkpoint`, `ground truth`, `prediction`, `file ZIP`) $\rightarrow$ **Giữ nguyên tiếng Anh**.
+     3. **Dịch ra có làm sai lệch bản chất kỹ thuật không?** (ví dụ: `ground truth` thành "sự thật", `pipeline` thành "đường ống") $\rightarrow$ **Cấm dịch**.
+   - *Tra cứu mở rộng:* Tra cứu bảng từ điển chuyên ngành trong `references/vocabulary-rules.md` khi gặp các thuật ngữ trong vùng xám.
 
-10. **Thống nhất thuật ngữ xuyên suốt các file:**
-    - *Đạt:* Không có hiện tượng file này dùng "phân đoạn đối tượng", file kia lại tự ý đổi thành "phân đoạn cá thể" hay "phân đoạn thực thể".
+6. **Quy tắc Song ngữ lần đầu (First-Mention Scope):**
+   - *Nguyên tắc:* Mỗi file tài liệu là một điểm vào độc lập. Chỉ mở ngoặc chú thích tiếng Anh ở **lần đầu tiên** thuật ngữ xuất hiện trong file đó (ví dụ: `phân loại ảnh (image classification)`). Từ lần thứ 2 trở đi: Dùng duy nhất 1 từ thống nhất, không lặp lại dấu ngoặc đơn.
 
-11. **Rõ ràng về chế độ làm việc (Work Mode):**
-    - *Đạt:* Xác định rõ là bài cá nhân (`individual` $\to$ repo `KX-DAYXX-HoVaTen-MSSV`, chấm ẩn danh) hay bài nhóm (`team` $\to$ repo `KX-DAYXX-TenNhom`, có file `TEAMMATES.md`).
+7. **Quy tắc Động từ Hành động Thực tế (Action-Oriented Verbs):**
+   - *Nguyên tắc:* 
+     - **1 Thao tác = 1 Động từ kỹ sư tự nhiên:** Dùng trực tiếp động từ mô tả hành vi giao diện/hệ thống (`chạy ô`, `mở`, `chọn`, `lưu`, `click chuột phải`, `click đúp`, `file`, `local`).
+     - **Khử sạch từ đệm quan liêu:** Xóa toàn bộ các từ hành chính hóa và dịch máy cũ kỹ (`thực thi`, `tiến hành`, `triển khai việc`, `nhấp phải`, `tệp`, `cục bộ`, `đồng nhất`).
 
-12. **Bảo toàn dữ kiện & Không rò rỉ context AI:**
-    - *Đạt:* Giữ nguyên link GitHub template chính thức; không rò rỉ các từ khóa AI nội bộ như "Antigravity", "assistant", "system prompt".
+8. **Mệnh lệnh Trực diện (Direct Constraint Rule):**
+   - *Nguyên tắc:* Khi có quy định cấm hoặc hạn chế, nêu mệnh lệnh ngắn gọn, dứt khoát (ví dụ: *"Không ghi lại họ tên, MSSV trong báo cáo"*). Không thêm văn giáo điều, không lên lớp đạo đức hay giải thích dài dòng về PII trừ khi tài liệu gốc yêu cầu.
+
+---
+
+### Nhóm 3: Tính Đồng bộ Đa tài liệu & Mở rộng (Multi-Doc & Scalability)
+
+9. **Khóa Chân lý Đơn nhất (Single Source of Truth Lock):**
+   - *Nguyên tắc:* Các thông số kỹ thuật (release tag, tên file nộp bài, cấu trúc thư mục nhận bài) phải khớp chính xác 100% giữa `README.md`, `GUIDE.md`, `RUBRIC.md`, `REPORT_TEMPLATE.md` và mã nguồn notebook (theo hướng dẫn `references/multi-doc-consistency.md`).
+
+10. **Khóa Thuật ngữ Toàn cục (Global Terminology Lock):**
+    - *Nguyên tắc:* Một thuật ngữ kỹ thuật đã được chọn thì phải dùng đồng nhất trên toàn bộ các file trong repository của bài lab (không để hiện tượng file này dùng "phân đoạn đối tượng", file kia lại đổi thành "phân đoạn cá thể").
