@@ -1,6 +1,6 @@
 ---
 name: lab-humanizer
-description: Duyệt, lọc và chỉnh sửa nội dung hướng dẫn bài lab tiếng Việt sang văn phong kỹ sư thực chiến tự nhiên, chính xác. Thống nhất tên gọi "Lab" (không dùng "Codelab"). Loại bỏ triệt để cả hai thái cực văn AI (dịch máy thô cứng kiểu word-by-word và chatbot nịnh nọt/vỗ về non-tech/spam emoji). Chuẩn hóa thuật ngữ chuyên ngành và bảo toàn dữ kiện kỹ thuật.
+description: Duyệt, lọc và chỉnh sửa toàn diện tài liệu kỹ thuật đào tạo tiếng Việt (Lab, README, Guide, Rubric, Report) sang văn phong kỹ sư thực chiến tự nhiên, chính xác. Bãi bỏ từ lai tạp "Codelab"; định danh linh hoạt, chuẩn xác theo vai trò tài liệu. Loại bỏ triệt để cả hai thái cực văn AI (dịch máy thô cứng và chatbot nịnh nọt/spam emoji); chuẩn hóa thuật ngữ chuyên ngành và bảo toàn dữ kiện kỹ thuật.
 license: MIT
 ---
 
@@ -12,10 +12,14 @@ Mục tiêu tối thượng: Biến văn bản sinh bởi AI hoặc dịch máy 
 
 ---
 
-## 0. Quy ước định danh chung
-- **Thống nhất tên gọi:** Luôn gọi là **"Lab"** hoặc **"Bài lab"** (ví dụ: *Bài lab Ngày 1*, *Lab #1*, *tài liệu lab*).
-- **Cấm sử dụng:** Tuyệt đối không dùng từ *"Codelab"*, *"bài codelab"*, *"Codelabs"*.
-
+## 0. Định danh chuẩn xác theo vai trò tài liệu (Bãi bỏ từ "Codelab")
+- **Cấm sử dụng:** Tuyệt đối không dùng từ lai tạp *"Codelab"*, *"bài codelab"*, *"Codelabs"*.
+- **Đặt tên tự nhiên, đúng chức năng của tài liệu:**
+  - **Đề bài / Bài thực hành:** Dùng **"Bài thực hành"**, **"Lab"**, hoặc **"Bài lab"** (ví dụ: *Bài thực hành Ngày 1*, *Lab #1*).
+  - **Tài liệu tổng quan Repo (`README.md`):** Đặt tên theo đề tài bài lab (ví dụ: *Bài thực hành Ngày 1 – Đọc nhãn từ đầu ra YOLO11*) hoặc tên dự án kỹ thuật.
+  - **Tài liệu hướng dẫn chi tiết / xử lý lỗi (`GUIDE.md`):** Dùng **"Hướng dẫn thực hành"**, **"Cẩm nang hướng dẫn"**.
+  - **Tài liệu tiêu chí chấm điểm (`RUBRIC.md`):** Dùng **"Tiêu chí đánh giá"**, **"Rubric đánh giá"**.
+  - **Tài liệu báo cáo học viên (`REPORT.md`):** Dùng **"Báo cáo thực hành"**, **"Báo cáo bài làm"**.
 ---
 
 ## Hai thái cực "Văn AI" cần loại bỏ

@@ -6,9 +6,15 @@ Trước khi xuất bản hoặc hoàn tất chỉnh sửa bất kỳ bài Lab n
 
 ### Nhóm 1: Giọng điệu kỹ sư & Khử rác AI (Tone & Anti-Slop)
 
-1. **Đã thống nhất tên gọi "Lab" chưa?**
-   - *Nguyên tắc:* Luôn dùng "Lab", "Bài lab", "Lab #X". Tuyệt đối loại bỏ từ "Codelab" hoặc "Codelabs".
-
+1. **Định danh chuẩn xác theo vai trò tài liệu (Loại bỏ hoàn toàn từ "Codelab"):**
+   - *Nguyên tắc:* 
+     - **Tuyệt đối loại bỏ:** 0 chữ "Codelab" hoặc "Codelabs" trong toàn bộ văn bản.
+     - **Gọi tên tự nhiên theo đúng vai trò tài liệu:**
+       - Tài liệu bài tập / thực hành: Dùng **"Bài thực hành"**, **"Lab"**, hoặc **"Bài lab"** (ví dụ: *Bài thực hành Ngày 1*, *Lab #1*).
+       - Tài liệu giới thiệu repo (`README.md`): Dùng **"Bài thực hành Ngày X"** hoặc tên đề tài/dự án kỹ thuật tương ứng.
+       - Tài liệu hướng dẫn chi tiết / cẩm nang (`GUIDE.md`): Dùng **"Hướng dẫn thực hành"**, **"Cẩm nang hướng dẫn"**.
+       - Tài liệu tiêu chí đánh giá (`RUBRIC.md`): Dùng **"Tiêu chí đánh giá"**, **"Rubric đánh giá"**.
+       - Tài liệu báo cáo sinh viên (`REPORT.md`): Dùng **"Báo cáo thực hành"**, **"Báo cáo bài làm"**.
 2. **Bộ lọc Ký tự thừa (Visual & Decoration Filter):**
    - *Nguyên tắc:* 0 emoji trang trí trong toàn bộ văn bản (chỉ chấp nhận các ký hiệu kỹ thuật như nút chạy `▶` hoặc mũi tên luồng `→`).
 

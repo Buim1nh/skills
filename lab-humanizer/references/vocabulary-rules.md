@@ -4,14 +4,17 @@ Bảng quy chuẩn từ vựng kỹ thuật đa lĩnh vực (Multi-Domain Techni
 
 ---
 
-## 0. Quy ước định danh chung
-| Cụm từ cấm dùng | Từ chuẩn thống nhất | Ghi chú |
-| :--- | :--- | :--- |
-| **Codelab / Codelabs** | **Lab / bài lab** | Luôn gọi là: *Bài lab Ngày 1*, *Lab #1*, *tài liệu lab* |
-| **bài codelab** | **bài lab** | Không dùng chữ "codelab" dưới mọi hình thức |
-| **hướng dẫn codelab** | **hướng dẫn bài lab** | |
+## 0. Quy ước định danh theo vai trò tài liệu (Bãi bỏ từ "Codelab")
 
----
+| Từ ngữ lai tạp (CẤM DÙNG) | Cách gọi chuẩn theo chức năng tài liệu | Ngữ cảnh sử dụng chuẩn |
+| :--- | :--- | :--- |
+| **Codelab / Codelabs** | **Bài thực hành**, **Lab**, **Bài lab** | Dùng cho bài tập / đề bài thực hành (*Bài thực hành Ngày 1*, *Lab #1*) |
+| **bài codelab** | **bài thực hành**, **bài lab** | |
+| **hướng dẫn codelab** | **hướng dẫn bài thực hành** | |
+| *(không ép mọi file phải đặt tên là Lab)* | **Tiêu chí đánh giá / Rubric** | Dành riêng cho file `RUBRIC.md` |
+| *(không ép mọi file phải đặt tên là Lab)* | **Hướng dẫn thực hành / Cẩm nang** | Dành riêng cho file `GUIDE.md` |
+| *(không ép mọi file phải đặt tên là Lab)* | **Báo cáo thực hành / Báo cáo bài làm** | Dành riêng cho file `REPORT.md` / `REPORT_TEMPLATE.md` |
+| *(không ép mọi file phải đặt tên là Lab)* | **Tên đề tài / Bài thực hành Ngày X** | Dành riêng cho file `README.md` |
 
 ## 1. Thuật ngữ Môi trường & Thao tác Máy tính (Universal & Platforms)
 Áp dụng cho 100% các bài lab thuộc mọi chủ đề:
