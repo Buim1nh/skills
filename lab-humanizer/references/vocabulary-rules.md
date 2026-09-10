@@ -1,88 +1,105 @@
-# Bảng chuẩn hóa thuật ngữ & Từ ngữ biên tập cho Lab
+# Bảng chuẩn hóa thuật ngữ & Từ ngữ biên tập cho Lab (Đa lĩnh vực)
 
-Bảng quy chuẩn từ vựng dùng để rà soát và thay thế tự động trong các bài lab hướng dẫn tiếng Việt.
+Bảng quy chuẩn từ vựng kỹ thuật đa lĩnh vực (Multi-Domain Technical Vocabulary), được thiết kế để mở rộng và tương thích cho mọi bài lab AI/ML/DL, Data Science và Phần mềm.
 
 ---
 
-## 0. Quy ước định danh: Thống nhất gọi là "Lab"
-
+## 0. Quy ước định danh chung
 | Cụm từ cấm dùng | Từ chuẩn thống nhất | Ghi chú |
 | :--- | :--- | :--- |
 | **Codelab / Codelabs** | **Lab / bài lab** | Luôn gọi là: *Bài lab Ngày 1*, *Lab #1*, *tài liệu lab* |
-| **bài codelab** | **bài lab** | |
+| **bài codelab** | **bài lab** | Không dùng chữ "codelab" dưới mọi hình thức |
 | **hướng dẫn codelab** | **hướng dẫn bài lab** | |
 
 ---
 
-## 1. Thuật ngữ kỹ thuật cốt lõi (Core Technical Terms)
+## 1. Thuật ngữ Môi trường & Thao tác Máy tính (Universal & Platforms)
+Áp dụng cho 100% các bài lab thuộc mọi chủ đề:
 
-### A. Giữ nguyên tiếng Anh (Tuyệt đối không dịch gượng ép)
-Các thuật ngữ này đã là ngôn ngữ chuẩn trong ngành kỹ thuật/AI tại Việt Nam. Cố tình dịch ra tiếng Việt làm văn phong trở nên ngô nghê, xa lạ:
+| Thuật ngữ gốc | Lỗi dịch thô / Hành chính hóa (CẤM) | Từ ngữ chuẩn kỹ sư (DÙNG) | Ngữ cảnh sử dụng |
+| :--- | :--- | :--- | :--- |
+| **local** | ❌ cục bộ, tại chỗ | **local** | "máy local", "môi trường Python local", "chạy local" |
+| **file** | ❌ tệp, tệp tin | **file** | "file JSON", "file PNG", "file README.md" |
+| **file ZIP** | ❌ tệp nén ZIP, gói nén | **file ZIP** | Luôn ghi rõ phần mở rộng: `KX-DAYXX-report.zip` |
+| **code cell** | ❌ ô mã thực thi | **ô mã**, **ô code** | "chạy ô mã", "ô code bên dưới" |
+| **run cell** | ❌ thực thi ô mã, tiến hành chạy | **chạy ô** | "chạy các ô theo thứ tự từ trên xuống dưới" |
+| **right click** | ❌ nhấp phải, nhấp chuột phải | **click chuột phải** | "click chuột phải vào file ZIP" |
+| **double click**| ❌ nhấp đúp | **click đúp** | "click đúp vào file để mở" |
+| **evidence** | ❌ bằng chứng | **kết quả bài làm**, **số liệu dẫn chứng** | Sinh viên làm bài tập, không phải điều tra án |
+| **open / create**| ❌ tiến hành mở, tiến hành tạo | **mở / tạo** | Bỏ từ rác hành chính "tiến hành" |
+| **identical** | ❌ đồng nhất trên mọi HĐH | *(viết trực tiếp thao tác)* | "áp dụng giống nhau trên Windows, macOS và Ubuntu" |
+| **cross-check** | ❌ tín hiệu đối soát | **dùng để đối soát** | Tránh danh từ hóa gượng gạo |
+| **artifacts** | ❌ các artifact | **các file nộp bài**, **kết quả đầu ra** | Dễ hiểu với người học |
 
-| Thuật ngữ | Lỗi dịch thô / Dịch cưỡng ép cần tránh | Ngữ cảnh sử dụng chuẩn |
+---
+
+## 2. Thuật ngữ Học máy & Khoa học Dữ liệu chung (Core Machine Learning)
+
+| Thuật ngữ | Lỗi dịch thô / Nhân hóa AI (CẤM) | Từ ngữ chuẩn kỹ sư (DÙNG) |
 | :--- | :--- | :--- |
-| **instance segmentation** | ❌ phân đoạn cá thể, dán nhãn viền áo | "phân đoạn đối tượng (instance segmentation)" hoặc "phân đoạn thực thể (instance segmentation)" ở lần đầu, sau đó dùng "phân đoạn đối tượng" hoặc "phân đoạn thực thể" |
-| **bounding box** (hoặc **box**) | ❌ hộp giới hạn, khung bao, hộp chữ nhật | "tọa độ bounding box", "đối chiếu box với ảnh" |
-| **ground truth** | ❌ nhãn sự thật, thước đo chân lý, sự thật mặt đất | "nhãn chuẩn (ground truth)" ở lần đầu, sau đó dùng "ground truth" |
-| **prediction** | ❌ lời phán đoán của AI, lời đoán mò | "kết quả dự đoán (prediction)" ở lần đầu, sau đó dùng "prediction" hoặc "kết quả dự đoán" |
-| **checkpoint** | ❌ điểm kiểm tra, mốc lưu | "checkpoint của mô hình", "tải checkpoint YOLO11n" |
-| **pipeline** | ❌ đường ống dẫn | "quy trình (pipeline)", "pipeline xử lý dữ liệu" |
-| **score / confidence** | ❌ độ tự tin của AI | "điểm số dự đoán (score)", "mức độ tin cậy" |
-| **threshold** | ❌ ngưỡng cửa | "ngưỡng lọc (threshold)", "hạ threshold", "tăng threshold" |
-| **object detection** | ❌ phát hiện vật | "phát hiện vật thể (object detection)" ở lần đầu |
-| **image classification** | ❌ phân lớp bức tranh | "phân loại ảnh (image classification)" ở lần đầu |
-| **polygon** | ❌ hình đa giác uốn lượn, đa giác mặt nạ | "đa giác (polygon)" ở lần đầu, sau đó dùng "polygon" hoặc "đa giác" |
-| **taxonomy** | ❌ thực đơn nhãn | "danh mục nhãn (taxonomy)" ở lần đầu, sau đó dùng "taxonomy" |
-| **annotator** | ❌ thợ dán nhãn | "người gán nhãn (annotator)" ở lần đầu, sau đó dùng "annotator" |
-| **local** | ❌ cục bộ (khi nói về máy tính/môi trường) | "môi trường Python local", "máy local", "chạy local" (tránh dùng "cục bộ") |
-| **file ZIP** | ❌ tệp nén ZIP, gói nén | "file ZIP", ghi rõ phần mở rộng: `KX-DAY01-report.zip` |
-| **code cell** | ❌ ô mã thực thi | "ô mã", "ô code" |
----
-
-## 2. Quy tắc Song ngữ lần đầu (First-Mention Rule)
-
-- **Lần đầu tiên xuất hiện:** Viết dạng `Thuật ngữ tiếng Việt (Thuật ngữ tiếng Anh)` hoặc ngược lại nếu từ tiếng Anh phổ biến hơn.
-  - *Ví dụ chuẩn:* 
-    - `phân loại ảnh (image classification)`
-    - `danh mục nhãn (taxonomy)`
-    - `kết quả dự đoán (prediction)`
-    - `nhãn chuẩn (ground truth)`
-- **Từ lần thứ 2 trở đi:** Dùng duy nhất một từ thống nhất, không lặp lại dấu mở đóng ngoặc `(...)`.
-  - *Đúng:* "...đọc nhãn chuẩn ground truth. Khi đối chiếu ground truth với..."
-  - *Sai (Spam ngoặc):* "...đọc nhãn chuẩn (ground truth). Khi đối chiếu nhãn chuẩn (ground truth) với..."
+| **ground truth** | ❌ nhãn sự thật, thước đo chân lý, sự thật mặt đất | **nhãn chuẩn (ground truth)** ở lần đầu, sau đó dùng **ground truth** |
+| **prediction** | ❌ lời phán đoán của AI, AI đoán mò | **kết quả dự đoán (prediction)** ở lần đầu, sau đó dùng **prediction** |
+| **checkpoint** | ❌ điểm kiểm tra, mốc lưu | **checkpoint** ("checkpoint của mô hình", "tải checkpoint") |
+| **pipeline** | ❌ đường ống dẫn | **quy trình (pipeline)** ở lần đầu, sau đó dùng **pipeline** |
+| **score / confidence** | ❌ độ tự tin của AI, mức tin tưởng | **điểm số dự đoán (score)**, **mức độ tin cậy** (không nhân hóa AI) |
+| **threshold** | ❌ ngưỡng cửa | **ngưỡng lọc (threshold)**, "hạ threshold", "tăng threshold" |
+| **taxonomy** | ❌ thực đơn nhãn, bảng món ăn | **danh mục nhãn (taxonomy)** ở lần đầu, sau đó dùng **taxonomy** |
+| **annotator** | ❌ thợ dán nhãn | **người gán nhãn (annotator)** ở lần đầu, sau đó dùng **annotator** |
+| **data leakage** | ❌ rò rỉ dữ liệu (dễ nhầm với security) | **rò rỉ dữ liệu huấn luyện (data leakage)** |
+| **overfitting** | ❌ quá khớp, học vẹt | **hiện tượng quá khớp (overfitting)** ở lần đầu, sau đó dùng **overfitting** |
+| **underfitting** | ❌ chưa khớp | **chưa khớp (underfitting)** |
+| **baseline** | ❌ đường cơ sở | **mô hình cơ sở (baseline)** |
+| **metric** | ❌ số liệu đo | **chỉ số đánh giá (metric)** |
+| **train/val/test split** | ❌ phân chia tàu xe | **chia tập train / validation / test** |
+| **epoch / batch size** | ❌ kỷ nguyên / kích thước lô | **epoch** / **batch size** (giữ nguyên tiếng Anh) |
+| **learning rate** | ❌ tốc độ học tập của AI | **tốc độ học (learning rate)** |
 
 ---
 
-## 3. Thao tác giao diện & Ngôn ngữ máy tính hàng ngày
+## 3. Thuật ngữ Chuyên ngành Thị giác Máy tính (Computer Vision Domain)
 
-Tuyệt đối tránh lối dịch máy cổ lỗ sĩ hoặc hành chính hóa:
-
-| Từ máy dịch / Hành chính hóa (TRÁNH) | Từ ngữ kỹ sư tự nhiên (NÊN DÙNG) | Ghi chú |
+| Thuật ngữ | Lỗi dịch thô (CẤM) | Từ ngữ chuẩn kỹ sư (DÙNG) |
 | :--- | :--- | :--- |
-| **nhấp phải / nhấp chuột phải** | **click chuột phải** | Chuẩn ngôn ngữ người dùng |
-| **nhấp đúp** | **click đúp** | |
-| **tệp / tệp tin** | **file** | "file REPORT.md", "file JSON" |
-| **thực thi ô mã / thực thi lệnh** | **chạy ô / chạy lệnh** | Giữ phong cách ngắn gọn của kỹ sư |
-| **tiến hành mở / tiến hành tạo** | **mở / tạo** | Bỏ từ rác "tiến hành" |
-| **đồng nhất** (trong ngữ cảnh áp dụng) | *(viết trực tiếp hành động)* | Tránh "đồng nhất trên mọi hệ điều hành" |
-| **cục bộ** | **local** | "máy local", "môi trường local" (tránh dịch thô "máy cục bộ") |
-| **bằng chứng / evidence** | **kết quả bài làm / số liệu dẫn chứng** | Sinh viên làm bài tập, không phải điều tra án |
-| **tín hiệu đối soát** | **dùng để đối soát** | Tránh danh từ hóa gượng gạo |
-| **trong các artifact** | **trong các file nộp bài** | Dễ hiểu với người học |
-| **chạy từ trên xuống dưới** | **chạy các ô theo thứ tự từ trên xuống dưới** | Rõ ràng, tự nhiên |
-| **không coi prediction là sự thật** | **không xem prediction là nhãn chuẩn (ground truth)** | Diễn đạt chuẩn khoa học dữ liệu |
-| **Không có lệnh cài đặt hệ thống...** | **Toàn bộ thao tác đều chạy online, bạn chưa cần cài đặt Python, thư viện hay script riêng trên máy local.** | Viết lại câu dịch máy rườm rà thành câu kỹ sư tự nhiên |
+| **instance segmentation** | ❌ phân đoạn cá thể, dán nhãn viền áo | **phân đoạn đối tượng (instance segmentation)** hoặc **phân đoạn thực thể** |
+| **semantic segmentation** | ❌ phân đoạn ngữ nghĩa từng điểm | **phân đoạn ngữ nghĩa (semantic segmentation)** |
+| **object detection** | ❌ phát hiện đồ vật | **phát hiện vật thể (object detection)** ở lần đầu |
+| **image classification** | ❌ phân lớp tranh ảnh | **phân loại ảnh (image classification)** ở lần đầu |
+| **bounding box** (hoặc **box**) | ❌ hộp giới hạn, khung bao, thùng carton | **bounding box** hoặc **box** (tuyệt đối không dịch thành hộp giới hạn) |
+| **polygon** | ❌ hình đa giác uốn lượn, đa giác mặt nạ | **đa giác (polygon)** ở lần đầu, sau đó dùng **polygon** |
+| **mask** | ❌ mặt nạ che mặt | **mặt nạ phân đoạn (mask)** ở lần đầu, sau đó dùng **mask** |
+| **IoU (Intersection over Union)** | ❌ giao trên hợp | **chỉ số IoU (Intersection over Union)** |
+| **tight bounding box** | ❌ hộp chặt | **quy tắc đóng bounding box bám sát vật thể** |
+| **occlusion** | ❌ sự bế tắc | **vật thể bị che khuất (occlusion)** |
+| **truncation** | ❌ sự cắt ngắn | **vật thể bị cắt mép ảnh (truncation)** |
+
 ---
 
-## 4. Danh sách cụm từ "Văn AI Chatbot" cấm sử dụng (Blacklist)
+## 4. Thuật ngữ Xử lý Ngôn ngữ Tự nhiên & LLM (NLP / GenAI Domain)
+Sẵn sàng mở rộng cho các bài lab xử lý văn bản, RAG và LLM sau này:
 
-Cắt bỏ hoàn toàn các câu văn mang tính vỗ về, ru ngủ hoặc nhân hóa máy tính:
+| Thuật ngữ | Lỗi dịch thô (CẤM) | Từ ngữ chuẩn kỹ sư (DÙNG) |
+| :--- | :--- | :--- |
+| **prompt** | ❌ lời nhắc nhở, câu xúi giục | **câu lệnh (prompt)** ở lần đầu, sau đó dùng **prompt** |
+| **token / tokenization** | ❌ đồng xu, mã thông báo | **token** / **tách token (tokenization)** |
+| **context window** | ❌ cửa sổ ngữ cảnh | **độ dài ngữ cảnh (context window)** |
+| **embeddings** | ❌ phép nhúng vào | **vector đặc trưng (embeddings)** |
+| **fine-tuning** | ❌ tinh chỉnh nhẹ nhàng | **tinh chỉnh mô hình (fine-tuning)** |
+| **RAG (Retrieval-Augmented Generation)** | ❌ thế hệ tăng cường thu hồi | **kỹ thuật RAG (Retrieval-Augmented Generation)** |
+| **hallucination** | ❌ ảo giác điên rồ | **hiện tượng ảo giác / sinh thông tin sai (hallucination)** |
+| **benchmark** | ❌ mốc chuẩn điểm chuẩn | **bộ tiêu chuẩn đánh giá (benchmark)** |
 
-- ❌ "Chào mừng bạn đến với buổi thực hành..."
-- ❌ "Đừng lo lắng!", "Cứ tự tin...", "Không sợ thao tác máy tính..."
-- ❌ "Cầm tay chỉ việc – 100% trên trình duyệt"
-- ❌ "Chúc mừng bạn! File nộp bài đã được gói gọn gàng..."
-- ❌ "Trạm cứu hộ sự cố", "Mở mắt xem kết quả"
-- ❌ "AI đoán bừa hoặc đoán trúng", "Độ tự tin của AI", "Mắt thần của AI"
-- ❌ Các ví dụ so sánh đời thực ngô nghê: "con mèo / con chó bông", "chiếc áo may đo", "thực đơn món ăn", "thùng carton vuông vức".
-- ❌ Mọi loại emoji trang trí (`💡`, `📖`, `👉`, `🛡️`, `🖥️`, `📁`, `🛠️`, v.v.).
+---
+
+## 5. Quy tắc Song ngữ lần đầu (First-Mention Rule)
+- **Lần đầu tiên xuất hiện trong file:** Viết dạng `Thuật ngữ tiếng Việt (Thuật ngữ tiếng Anh)`.
+  - *Ví dụ:* `phân loại ảnh (image classification)`, `phân đoạn đối tượng (instance segmentation)`, `danh mục nhãn (taxonomy)`.
+- **Từ lần thứ 2 trở đi trong file đó:** Dùng duy nhất **1 từ nhất quán** (ưu tiên thuật ngữ kỹ thuật ngắn gọn, tự nhiên), tuyệt đối không lặp lại dấu mở đóng ngoặc đơn.
+
+---
+
+## 6. Danh sách đen các câu văn "Văn AI Chatbot" (Absolute Blacklist)
+Cắt bỏ 100% trong mọi bài lab:
+- ❌ Lời chào & dỗ dành: *"Chào mừng bạn..."*, *"Nếu bạn là người mới (non-tech), đừng lo lắng!"*, *"Cầm tay chỉ việc"*, *"Chúc mừng bạn đã hoàn thành!"*, *"Cứ tự tin..."*.
+- ❌ Ví von đời thực khập khiễng: con chó/mèo, thùng carton, áo may đo, thực đơn món ăn, "mắt thần AI", lệnh *"Mở mắt xem kết quả"*.
+- ❌ Nhân hóa AI phản khoa học: *"AI đoán bừa"*, *"Độ tự tin của AI"*, *"thước đo chân lý"*.
+- ❌ Tất cả các loại Emoji trang trí (`💡`, `📖`, `👉`, `🛡️`, `🖥️`, `📁`, `🛠️`...).
