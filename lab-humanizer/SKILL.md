@@ -1,6 +1,6 @@
 ---
 name: lab-humanizer
-description: Duyệt, lọc và chỉnh sửa toàn diện tài liệu kỹ thuật đào tạo tiếng Việt (Lab, README, Guide, Rubric, Report) sang văn phong kỹ sư thực chiến tự nhiên, chính xác. Bãi bỏ từ lai tạp "Codelab"; định danh linh hoạt, chuẩn xác theo vai trò tài liệu. Loại bỏ triệt để cả hai thái cực văn AI (dịch máy thô cứng và chatbot nịnh nọt/spam emoji); chuẩn hóa thuật ngữ chuyên ngành và bảo toàn dữ kiện kỹ thuật.
+description: Duyệt, lọc và chỉnh sửa toàn diện tài liệu kỹ thuật đào tạo tiếng Việt (Lab, README, Guide, Rubric, Report) sang văn phong kỹ sư thực chiến tự nhiên, chính xác. Định danh linh hoạt theo vai trò tài liệu; loại bỏ triệt để cả hai thái cực văn AI (dịch máy thô cứng và chatbot nịnh nọt/spam emoji); chuẩn hóa thuật ngữ chuyên ngành và bảo toàn dữ kiện kỹ thuật.
 license: MIT
 ---
 
@@ -12,14 +12,13 @@ Mục tiêu tối thượng: Biến văn bản sinh bởi AI hoặc dịch máy 
 
 ---
 
-## 0. Định danh chuẩn xác theo vai trò tài liệu (Bãi bỏ từ "Codelab")
-- **Cấm sử dụng:** Tuyệt đối không dùng từ lai tạp *"Codelab"*, *"bài codelab"*, *"Codelabs"*.
-- **Đặt tên tự nhiên, đúng chức năng của tài liệu:**
-  - **Đề bài / Bài thực hành:** Dùng **"Bài thực hành"**, **"Lab"**, hoặc **"Bài lab"** (ví dụ: *Bài thực hành Ngày 1*, *Lab #1*).
-  - **Tài liệu tổng quan Repo (`README.md`):** Đặt tên theo đề tài bài lab (ví dụ: *Bài thực hành Ngày 1 – Đọc nhãn từ đầu ra YOLO11*) hoặc tên dự án kỹ thuật.
-  - **Tài liệu hướng dẫn chi tiết / xử lý lỗi (`GUIDE.md`):** Dùng **"Hướng dẫn thực hành"**, **"Cẩm nang hướng dẫn"**.
-  - **Tài liệu tiêu chí chấm điểm (`RUBRIC.md`):** Dùng **"Tiêu chí đánh giá"**, **"Rubric đánh giá"**.
-  - **Tài liệu báo cáo học viên (`REPORT.md`):** Dùng **"Báo cáo thực hành"**, **"Báo cáo bài làm"**.
+## 0. Định danh tài liệu theo vai trò
+Đặt tên tự nhiên, đúng chức năng của từng loại tài liệu (không dùng từ lai tạp như "Codelab"):
+- **Đề bài / Bài tập:** Dùng **"Bài thực hành"**, **"Lab"**, hoặc **"Bài lab"** (ví dụ: *Bài thực hành Ngày 1*, *Lab #1*).
+- **Tài liệu tổng quan Repo (`README.md`):** Đặt theo đề tài bài lab (ví dụ: *Bài thực hành Ngày 1 – Đọc nhãn từ đầu ra YOLO11*) hoặc tên dự án kỹ thuật.
+- **Tài liệu hướng dẫn chi tiết (`GUIDE.md`):** Dùng **"Hướng dẫn thực hành"**, **"Cẩm nang hướng dẫn"**.
+- **Tài liệu tiêu chí chấm điểm (`RUBRIC.md`):** Dùng **"Tiêu chí đánh giá"**, **"Rubric đánh giá"**.
+- **Tài liệu báo cáo học viên (`REPORT.md`):** Dùng **"Báo cáo thực hành"**, **"Báo cáo bài làm"**.
 ---
 
 ## Hai thái cực "Văn AI" cần loại bỏ
@@ -80,14 +79,10 @@ Khi gặp một thuật ngữ tiếng Anh, không phụ thuộc vào danh sách 
 ---
 
 ## Quy trình duyệt & đồng bộ văn bản (Review Workflow)
-
-Khi nhận một file hoặc một bài lab cần duyệt/đồng bộ, thực hiện lần lượt 4 bước:
-
 1. **Bước 1: Quét và loại bỏ rác AI (Scan & Strip Slop)**
-   - Đổi toàn bộ các từ "Codelab/Codelabs" $\to$ "Lab/Labs".
    - Quét xóa toàn bộ Emoji trang trí.
    - Xóa bỏ các đoạn văn mở đầu chào mừng, dỗ dành non-tech, cổ vũ sáo rỗng.
-   - Xóa bỏ các phép ví von đời thực khập khiễng, các câu nhân hóa AI ("đoán bừa", "mắt thần").
+   - Xóa bỏ các phép ví von đời thực khập khiễng, các câu nhân hóa máy móc ("đoán bừa", "mắt thần").
 2. **Bước 2: Chuẩn hóa thuật ngữ & động từ thao tác (Normalize Terminology & Actions)**
    - Áp dụng Bộ lọc 3 câu hỏi cho thuật ngữ tiếng Anh; tra cứu thêm tại `references/vocabulary-rules.md`.
    - Áp dụng Quy tắc Động từ Hành động: thay các từ hành chính hóa ("thực thi", "tiến hành", "đồng nhất", "cục bộ", "tệp") bằng động từ kỹ sư tự nhiên ("chạy ô", "mở", "chọn", "local", "file").

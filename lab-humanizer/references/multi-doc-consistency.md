@@ -30,7 +30,7 @@ Khi duyệt và biên tập, các thông số kỹ thuật sau đây phải **kh
   - Đã dùng **"phân đoạn đối tượng (instance segmentation)"** thì không được ở `README` viết "phân đoạn đối tượng", sang `GUIDE` lại đổi thành "phân đoạn cá thể", sang `RUBRIC` lại viết "phân đoạn thực thể".
   - Đã dùng **"bounding box"** thì không được ở file này viết "bounding box", file khác viết "hộp chữ nhật", file khác nữa viết "hộp giới hạn".
   - Đã dùng **"nhãn chuẩn (ground truth)"** thì không được ở file báo cáo dùng "sự thật" hay "ground truth chưa kiểm chứng".
-  - Đã thống nhất gọi là **"Lab"** thì cấm xuất hiện chữ "Codelab" ở bất kỳ file nào (`README`, `GUIDE`, `REPORT`, `RUBRIC`, `notebook`).
+  - Đặt tên các tài liệu tự nhiên theo đúng vai trò chức năng (không dùng từ lai tạp "Codelab" ở bất kỳ file nào).
 
 ---
 

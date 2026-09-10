@@ -4,17 +4,15 @@ Bảng quy chuẩn từ vựng kỹ thuật đa lĩnh vực (Multi-Domain Techni
 
 ---
 
-## 0. Quy ước định danh theo vai trò tài liệu (Bãi bỏ từ "Codelab")
+## 0. Định danh theo vai trò tài liệu
 
-| Từ ngữ lai tạp (CẤM DÙNG) | Cách gọi chuẩn theo chức năng tài liệu | Ngữ cảnh sử dụng chuẩn |
+| Loại tài liệu | Cách đặt tên chuẩn chức năng | Tránh dùng |
 | :--- | :--- | :--- |
-| **Codelab / Codelabs** | **Bài thực hành**, **Lab**, **Bài lab** | Dùng cho bài tập / đề bài thực hành (*Bài thực hành Ngày 1*, *Lab #1*) |
-| **bài codelab** | **bài thực hành**, **bài lab** | |
-| **hướng dẫn codelab** | **hướng dẫn bài thực hành** | |
-| *(không ép mọi file phải đặt tên là Lab)* | **Tiêu chí đánh giá / Rubric** | Dành riêng cho file `RUBRIC.md` |
-| *(không ép mọi file phải đặt tên là Lab)* | **Hướng dẫn thực hành / Cẩm nang** | Dành riêng cho file `GUIDE.md` |
-| *(không ép mọi file phải đặt tên là Lab)* | **Báo cáo thực hành / Báo cáo bài làm** | Dành riêng cho file `REPORT.md` / `REPORT_TEMPLATE.md` |
-| *(không ép mọi file phải đặt tên là Lab)* | **Tên đề tài / Bài thực hành Ngày X** | Dành riêng cho file `README.md` |
+| **Đề bài / Bài tập** | **Bài thực hành**, **Lab**, **Bài lab** | ❌ Codelab, bài codelab |
+| **Tài liệu giới thiệu (`README.md`)** | **Tên đề tài / Bài thực hành Ngày X** | ❌ Codelab Ngày X |
+| **Hướng dẫn chi tiết (`GUIDE.md`)** | **Hướng dẫn thực hành / Cẩm nang** | ❌ Hướng dẫn codelab |
+| **Tiêu chí chấm (`RUBRIC.md`)** | **Tiêu chí đánh giá / Rubric** | |
+| **Báo cáo học viên (`REPORT.md`)** | **Báo cáo thực hành / Báo cáo bài làm** | |
 
 ## 1. Thuật ngữ Môi trường & Thao tác Máy tính (Universal & Platforms)
 Áp dụng cho 100% các bài lab thuộc mọi chủ đề:
