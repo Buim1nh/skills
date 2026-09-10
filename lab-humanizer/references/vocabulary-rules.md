@@ -20,7 +20,7 @@ Bảng quy chuẩn từ vựng dùng để rà soát và thay thế tự động
 Các thuật ngữ này đã là ngôn ngữ chuẩn trong ngành kỹ thuật/AI tại Việt Nam. Cố tình dịch ra tiếng Việt làm văn phong trở nên ngô nghê, xa lạ:
 
 | Thuật ngữ | Lỗi dịch thô / Dịch cưỡng ép cần tránh | Ngữ cảnh sử dụng chuẩn |
-| :--- | :--- | :--- |
+| **instance segmentation** | ❌ phân đoạn đối tượng cắt rời, dán nhãn viền áo | "phân đoạn đối tượng (instance segmentation)" hoặc "phân đoạn thực thể (instance segmentation)" ở lần đầu, sau đó dùng "phân đoạn đối tượng" hoặc "phân đoạn thực thể" |
 | **bounding box** (hoặc **box**) | ❌ hộp giới hạn, khung bao, hộp chữ nhật | "tọa độ bounding box", "đối chiếu box với ảnh" |
 | **ground truth** | ❌ nhãn sự thật, thước đo chân lý, sự thật mặt đất | "nhãn chuẩn (ground truth)" ở lần đầu, sau đó dùng "ground truth" |
 | **prediction** | ❌ lời phán đoán của AI, lời đoán mò | "kết quả dự đoán (prediction)" ở lần đầu, sau đó dùng "prediction" hoặc "kết quả dự đoán" |
